@@ -6,7 +6,7 @@ const cors = require('cors')
 const port = process.env.PORT || 5000;
 require('dotenv').config()
 
-const serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT;
+const serviceAccount = require('./doctors-portal-firebase-adminsdk.json');
 
 
 admin.initializeApp({
